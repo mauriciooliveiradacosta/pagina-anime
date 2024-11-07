@@ -1,0 +1,98 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height:100vh;
+}
+header{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    background-image: url(imagens/back.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+h1{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 3em;
+    text-shadow: 0 0 .5em #2137bd , 0 0 .5em #2137bd;
+}
+nav{
+    text-align: right;
+}
+nav ol{
+    text-transform: uppercase;
+    height: 100%;
+}
+nav > ol > li{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+nav > ol > li > a{
+    text-shadow: 0px 0px 6px white,0px 0px 6px white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: white;
+    transition: 0.5s;
+}
+nav > ol > li > a:hover{
+    border-radius:10px;
+    background-color:white ;
+    color: black;
+}
+main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    margin-top: 80px;
+    min-height: 500px;
+}
+section{
+    text-align: center;
+    background-color: lightgray;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 300px;
+    transition: 0.8s;
+
+}
+section:hover{
+    scale: 1.1;
+}
+section > div.img{
+    border-radius: 20px;
+    margin: auto;
+    width: 85%;
+    height: 160px;
+}
+div#img1{
+    background-position: center 60%;
+    background-size: cover;
+    background-image: url(imagens/dandadan.jpg);
+}
+div#img2{
+    background-size: cover;
+    background-image: url(imagens/undead-unluck.jpg);
+}
+div#img3{
+    background-size: cover;
+    background-position: center 50%;
+    background-image: url(imagens/shumatsu.jpg);
+}
+

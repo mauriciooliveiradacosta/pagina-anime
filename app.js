@@ -92,13 +92,3 @@ function mostraritens(animes){
 
   container.innerHTML = mostraritem
 }
-function filtrarelementos(categoria){
-  const elementos = document.querySelectorAll('.box');
-
-  elementos.forEach((elemento) =>{
-      elemento.classList.remove("show")
-      if(categoria === "todos" || elemento.classList.contains(categoria)){
-          elemento.classList.add("show")
-      }
-  })
-}
